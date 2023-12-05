@@ -1,0 +1,131 @@
+/* стили пишем по порядку, сначала основные, например body*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh;
+    color: rgb(223, 206, 198);
+    background-color: #211e27;
+    /* шрифт используется везде одинаковый, поэтому его стоит один раз указать здесь, и потом не повторять */
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* header */
+
+header {
+    background-color: #262230;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    /* text-align: center; */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* main content block */
+
+.main-content {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* padding-left: 300px; */
+    /* padding-top: 0px; */
+    flex: 1;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    /* background-image: url(../foto/photo_2022-09-14_16-42-07.jpg); */
+    background-size: cover;
+
+}
+
+/* дальше, слева-направо, sidebar */
+
+.sidebar {
+    display: block;
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    /* width: 300px; */
+    /* Set the width of the sidebar */
+    background-color: #211e27;
+    /* Disable horizontal scroll */
+
+    text-align: center;
+}
+
+.sidebar img {
+    max-height: 210px;
+}
+
+.card {
+    border: 2px solid;
+    font-size: 14px;
+    /* margin: 0 0 12px 0;  если задаете только один параметр не нужно использовать все четыре*/
+    margin-bottom: 10px;
+    padding: 15px;
+    color: #211e27;
+    /* opacity: 0.4; */
+    /* z-index: -1; */
+}
+
+.sidebar-title {
+    color: rgb(196, 11, 48);
+    font-size: 16px;
+}
+
+/* right content block */
+
+/* .about-acrobatic { */
+    /* text-align: center; */
+    /* padding-top: 65%; */
+/* } */
+
+.right {
+    padding: 20px;
+    /* position: relative; */
+    text-align: center;
+    background-color: rgb(80, 88, 94);
+    /* background-image: url(../foto/photo_2022-09-14_16-42-07.jpg); */
+    /* background-size: 100%; */
+    /* background-size: cover; */
+    /* z-index: 2; */
+    /* color: rgb(223, 206, 198); */
+}
+
+.right img {
+    margin: 30px 0;
+}
+
+/* .right::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(80, 88, 94); */
+    /* opacity: 0.4; */
+    /* z-index: -1; */
+/* } */
+
+/* .feedback { */
+    /* text-align: center; */
+    /* font-family: 'Dancing Script', cursive; */
+/* } */
+footer {
+    background-color: #262230;
+    text-align: center;
+    padding: 16px 20px;
+}
